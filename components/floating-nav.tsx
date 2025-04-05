@@ -1,19 +1,20 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Home, User, Code, Briefcase, Mail } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const FloatingNav = () => {
   const [activeSection, setActiveSection] = useState('home');
 
-  const sections = [
+  // Wrap sections array in useMemo to prevent recreation on every render
+  const sections = useMemo(() => [
     { id: 'home', icon: Home, label: 'Home' },
     { id: 'about', icon: User, label: 'About' },
     { id: 'skills', icon: Code, label: 'Skills' },
     { id: 'projects', icon: Briefcase, label: 'Projects' },
     { id: 'contact', icon: Mail, label: 'Contact' },
-  ];
+  ], []);
 
   useEffect(() => {
     const handleScroll = () => {
