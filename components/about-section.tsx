@@ -16,8 +16,8 @@ const AboutSection = () => {
           
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              I'm a passionate full stack developer with a strong focus on creating intuitive and performant web applications. 
-              With 5+ years of experience in the industry, I've worked on a variety of projects ranging from small business websites 
+              I&apos;m a passionate full stack developer with a strong focus on creating intuitive and performant web applications. 
+              With 5+ years of experience in the industry, I&apos;ve worked on a variety of projects ranging from small business websites 
               to large-scale enterprise applications.
             </p>
             <p>
@@ -25,7 +25,7 @@ const AboutSection = () => {
               of well-designed software to transform businesses and improve lives.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+              When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source projects, 
               or enjoying outdoor activities to maintain a healthy work-life balance.
             </p>
           </div>

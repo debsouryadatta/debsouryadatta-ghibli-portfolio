@@ -14,7 +14,7 @@ const ContactSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 space-y-3">
             <h2 className="text-xl text-primary font-medium">Get In Touch</h2>
-            <h3 className="text-3xl md:text-5xl font-bold">Let's Work Together</h3>
+            <h3 className="text-3xl md:text-5xl font-bold">Let&apos;s Work Together</h3>
             <Separator className="w-24 h-1 bg-primary rounded-full mx-auto mt-4" />
           </div>
 
@@ -23,7 +23,7 @@ const ContactSection = () => {
               <div className="space-y-4">
                 <h4 className="text-2xl font-bold">Contact Information</h4>
                 <p className="text-muted-foreground text-lg">
-                  Feel free to reach out for collaborations or just a friendly hello. I'm currently 
+                  Feel free to reach out for collaborations or just a friendly hello. I&apos;m currently 
                   available for freelance work and full-time positions.
                 </p>
               </div>

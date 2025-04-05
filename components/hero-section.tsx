@@ -3,6 +3,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Github, Linkedin, Twitter } from 'lucide-react';
+import Image from 'next/image';
 
 const HeroSection = () => {
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -24,7 +25,7 @@ const HeroSection = () => {
           <div className="space-y-2">
             <h2 className="text-xl text-primary font-medium">Full Stack Developer</h2>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              Hi, I'm <span className="text-primary">Debsourya Datta</span>
+              Hi, I&apos;m <span className="text-primary">Debsourya Datta</span>
             </h1>
           </div>
           
@@ -65,11 +66,13 @@ const HeroSection = () => {
       </div>
       
       {/* Right side image - 50% width on desktop, full height on mobile */}
-      <div className="w-full lg:w-1/2 h-[50vh] lg:h-screen order-1 lg:order-2">
-        <img 
+      <div className="w-full lg:w-1/2 h-[50vh] lg:h-screen order-1 lg:order-2 relative">
+        <Image 
           src="https://res.cloudinary.com/diyxwdtjd/image/upload/v1743867720/Personal/ghibli-debu.jpg" 
           alt="Debsourya Datta" 
-          className="h-full w-full object-cover"
+          fill
+          priority
+          className="object-cover"
         />
       </div>
       
